@@ -1,0 +1,115 @@
+
+body img{
+  justify-content: flex-start;
+
+  margin: 0;
+  height: 100px;
+  width: 125px;
+
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row;
+  font-size: 120%;
+  padding: 0, .5em
+
+}
+body a {
+  justify-content: space-around;
+  padding: 1em;
+}
+
+header {
+  background: tomato;
+
+}
+#main {
+  width: 100vw;
+background-image: url("https://images.pexels.com/photos/45182/dallas-texas-skyline-dusk-45182.jpeg?w=940&h=650&auto=compress&cs=tinysrgb"),linear-gradient(lightgrey, black);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+height: 300px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+
+}
+#main, h2 {
+color: white;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  bottom-padding: 5px;
+
+
+}
+ #main button {
+  background-color: green;
+  font-size: .5em;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+  height: 22px;
+  width: 50px;
+border-radius: 50%;
+padding: 12px;
+}
+
+h1 {
+  display:flex;
+  text-align: center;
+  font-size: 80%
+  margin: 30% 0;
+}
+h2 {
+margin: 0;
+}
+#textsplit {
+  display:flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-around;
+  height: 35vh;
+
+
+}
+/* start rolling background parallax */
+.pimg1, .pimg2, .pimg3 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 400px;
+  background-attachment: fixed;
+}
+.pimg1 {
+  background-image: url("cityfog.jpeg");
+  min-height: 100vh;
+
+}
+.pimg2 {
+  background-image: url("road.jpeg");
+  min-height: 100vh;
+}
+.pimg3 {
+  background-image: url("pexels-photo-169677.jpeg");
+  min-height: 100vh;
+}
+@@media(max-width:570px) {
+  .pimg1, .pimg2, .pimg3 {
+    background-attachment: scroll;
+
+  }
+}
